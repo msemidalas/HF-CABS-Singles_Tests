@@ -1,0 +1,21 @@
+! RI-MP2-F12 nousesym verytightscf NoPOP PRINTBASIS
+
+%basis
+GTOName = "/work/emmanous/4F12orbitalbasisforTMs_sequel/Cl2/ORCA/with_def2QZVPPJKfit_as_CABS/VQZ-F12/obs.orca"
+GTOAuxJKName = "/work/emmanous/4F12orbitalbasisforTMs_sequel/Cl2/ORCA/with_def2QZVPPJKfit_as_CABS/VQZ-F12/jkbasis.orca"
+GTOAuxCName = "/work/emmanous/4F12orbitalbasisforTMs_sequel/Cl2/ORCA/with_def2QZVPPJKfit_as_CABS/VQZ-F12/mp2fitbasis.orca"
+GTOCABSName = "/work/emmanous/4F12orbitalbasisforTMs_sequel/Cl2/ORCA/with_def2QZVPPJKfit_as_CABS/VQZ-F12/cabs.orca"
+end
+
+%pal nprocs 16
+end
+%maxcore 12000
+
+%method
+F12Gamma 1.0
+end
+
+*xyz 0 1
+Cl 	0.0000 	0.0000 	0.0000
+Cl 	0.0000 	0.0000 	1.9879
+*

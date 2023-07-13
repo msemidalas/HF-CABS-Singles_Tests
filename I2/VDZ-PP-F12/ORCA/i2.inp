@@ -1,0 +1,24 @@
+! RI-MP2-F12 nousesym verytightscf NoPOP PRINTBASIS
+
+%basis
+GTOName = "/work/emmanous/4F12orbitalbasisforTMs_sequel/I2/VDZ-PP-F12/ORCA/obs.orca"
+GTOAuxJKName = "/work/emmanous/4F12orbitalbasisforTMs_sequel/I2/VDZ-PP-F12/ORCA/jkbasis.orca"
+GTOAuxCName = "/work/emmanous/4F12orbitalbasisforTMs_sequel/I2/VDZ-PP-F12/ORCA/mp2fitbasis.orca"
+GTOCABSName = "/work/emmanous/4F12orbitalbasisforTMs_sequel/I2/VDZ-PP-F12/ORCA/jkbasis.orca"
+NewECP I "SK-MCDHF-RSC" end
+DecontractCABS  false
+end
+
+%pal nprocs 16
+end
+%maxcore 2000
+
+%method
+NewNCore I 28 end
+F12Gamma 0.9
+end
+
+*xyz 0 1
+I 	0.0000 	0.0000 	0.0000
+I 	0.0000 	0.0000  2.6655
+*
